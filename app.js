@@ -81,9 +81,26 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
+// const foods = ['pizza', 'cheeseburger']
+// foods.splice(0, 1, 'sushi', 'cupcake')
+
+// console.log('Exercise 6 result:', foods);
+
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
+*/
+
 const foods = ['pizza', 'cheeseburger']
-foods.splice(0, 1, 'sushi', 'cupcake')
+foods.push ('sushi', 'cupcake')
+console.log (foods)
 
-console.log('Exercise 6 result:', foods);
-
+const yummy = foods.splice (2, 3)
+console.log('Exercise 7 result:', yummy);
 
