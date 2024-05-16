@@ -9,6 +9,8 @@ Exercise 1 has been completed for you:
 // const foods = [];
 // console.log('Exercise 1 result:', foods);
 
+
+
 /*
 Exercise 2: Add strings to the array
 
@@ -24,6 +26,8 @@ Complete Exercise 2 in the space below:
 // console.log('Exercise 2 result:', foods);
 
 
+
+
 /*
 Exercise 3: Insert at the beginning
 
@@ -32,9 +36,25 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-const foods = [];
-foods.push ('pizza', 'cheeseburger', 'sushi')
-console.log (foods)
-console.log (foods.unshift('taco'))
-console.log('Exercise 3 result:', foods);
+// const foods = [];
+// foods.push ('pizza', 'cheeseburger', 'sushi')
+// console.log (foods)
+// console.log (foods.unshift('taco'))
+// console.log('Exercise 3 result:', foods);
 
+
+/*
+Exercise 4: Access an array element
+
+1) Retrieve the 'pizza' string from the array based on its position (index) in
+   the array.  
+
+2) Assign it to a variable called `favFood`.
+
+Complete Exercise 4 in the space below:
+*/
+
+const foods = ['sushi', 'pizza', 'cake']
+const favFood = foods [1];
+
+console.log('Exercise 4 result:', favFood);
