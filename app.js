@@ -158,3 +158,69 @@ console.log (foods.includes('soup'))
 const hasSoup = foods.includes('soup');
 console.log('Exercise 10 result:', hasSoup);
 
+
+
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// const odds = []
+
+// for (let x = 0; x < nums.length; x++) {
+//     if (nums[x] % 2 !== 0) {
+//         odds.push(nums[x]);
+//     }
+// }
+
+// console.log('Exercise 11 result:', odds);
+
+/*
+Exercise 12: FizzBuzz with arrays
+
+1) Choose a method to iterate through the `nums` array. 
+
+2. As you loop, sort the numbers into new arrays based on the following rules:
+
+   - Push any number evenly divisible by 3 to an array called `fizz`.
+   - Push any number evenly divisible by 5 to an array called `buzz`.
+   - Push any number that is evenly divisible by 3 and 5 to an array called
+     `fizzbuzz`.
+
+   Note: A single number may meet more than one of the above rules. If it does,
+         it should be placed in multiple arrays. For example, the number `15`
+         will appear in the `fizz`, `buzz`, and `fizzbuzz` arrays.
+
+Complete Exercise 12 in the space below:
+*/ 
+
+// for each
+
+let nums = [1,2,3,4,5,6,7,8,9,10]
+let fizz = [];
+let buzz = [];
+let fizzbuzz = [];
+
+nums.forEach(num => {
+    if (num % 3 === 0 && num % 5 === 0){
+        fizzbuzz.push(num);
+    } else if (num % 3 === 0) {
+        fizz.push (num);
+    }else if (num % 5 === 0){
+        buzz.push(num)
+        }
+})
+
+
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
